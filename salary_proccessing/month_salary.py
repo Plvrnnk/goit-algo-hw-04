@@ -15,5 +15,5 @@ def total_salary(path):
         average = int(total / len(salary_list))
     return total, average
 
-total, average = total_salary('./salary.txt')
+total, average = total_salary('./salary_proccessing/salary.txt')
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
