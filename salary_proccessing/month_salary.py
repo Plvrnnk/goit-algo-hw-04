@@ -6,7 +6,7 @@ def total_salary(path):
             lines = fl.readlines()
             for line in lines:
                 num = line.strip().split(',')
-                salary_list.append(int(num[1]))
+                salary_list.append(float(num[1]))
     except FileNotFoundError:
         print('File is not found')
     except ValueError:
