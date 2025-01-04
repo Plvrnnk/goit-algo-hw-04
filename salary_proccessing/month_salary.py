@@ -11,11 +11,10 @@ def total_salary(path):
         print('File is not found')
     except ValueError:
         print('ValueError in the file')
-
-    for salary in salary_list:
-        total += salary
-    average = int(total / len(salary_list))
+    if len(salary_list) >= 1:
+        for salary in salary_list:
+            total += salary
+        average = total / len(salary_list)
     return total, average
-
 total, average = total_salary('./salary_proccessing/salary.txt')
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
