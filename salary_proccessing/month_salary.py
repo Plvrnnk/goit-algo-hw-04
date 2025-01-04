@@ -2,7 +2,7 @@ def total_salary(path):
     salary_list = []
     total = 0
     try:
-        with open(path, 'r') as fl:
+        with open(path, 'r', encoding='UTF-8') as fl:
             lines = fl.readlines()
             for line in lines:
                 num = line.strip().split(',')
